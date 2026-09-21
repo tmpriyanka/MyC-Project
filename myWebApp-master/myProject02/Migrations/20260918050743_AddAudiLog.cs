@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace myProject02.Migrations
 {
     /// <inheritdoc />
-    public partial class AddAuditLog : Migration
+    public partial class AddAudiLog : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

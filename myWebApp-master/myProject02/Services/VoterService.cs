@@ -3,7 +3,7 @@ using myProject02.Dto;
 using myProject02.Models;
 using myProject02.Services;
 
-namespace MyBackendApp.Services
+namespace myProject02.Services
 {
     public class VoterService : Ivoterservice
     {

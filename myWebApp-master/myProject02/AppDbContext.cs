@@ -1,17 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using myProject02.Models.Interfaces;
+using System.Security.Cryptography.X509Certificates;
 
 namespace myProject02.Models
 
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext: DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-
-        }
+           
+    }
         public DbSet<Voter> Voters { get; set; }
         public DbSet<AuditLog> Audit { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
